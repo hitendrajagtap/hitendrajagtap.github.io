@@ -774,6 +774,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
+  text-align: justify;
   color: #515151;
   background-color: #fbfbfb;
   margin: 0;
