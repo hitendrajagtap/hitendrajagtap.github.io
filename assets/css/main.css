@@ -1152,7 +1152,9 @@ footer .copyright {
 }
 
 .post .post-content .post-date,
-.post .post-content .post-words {
+.post .post-content .post-words,
+.post .post-content .post-categories,
+.post .post-content .post-tags {
   font-size: 12px;
 }
 
@@ -1211,7 +1213,7 @@ a.newer-posts:hover {
   line-height: 1.3;
 }
 
-.header-page .page-date {
+.header-page .page-date .page-categories .page-words {
   color: #a0a0a0;
   font-weight: 300;
   font-size: 12px;
