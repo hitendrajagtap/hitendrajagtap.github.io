@@ -1,1 +1,1 @@
-# My simple Jekyll themed blog.
+# My simple Jekyll themed technology blog.
