@@ -10,9 +10,7 @@ tags:
   - bots
   - ml
   - ai
-  - mr
-  - vr
-  - ar
+  - xr
   - 5g
   - iot
   - robots
