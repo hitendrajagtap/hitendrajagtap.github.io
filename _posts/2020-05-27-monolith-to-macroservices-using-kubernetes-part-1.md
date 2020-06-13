@@ -24,16 +24,18 @@ The focus of this blog post is more practical, technical, and hands-on. Here, I 
 
 ## The Monolith
 
-The example monolith that I have used here is a hypothetical drone delivery application described in one of Microsoft Learn samples <https://docs.microsoft.com/en-us/learn/modules/microservices-architecture/>. I have forked the original monolith source code and modified it at <https://github.com/hitendrajagtap/monolith-to-macroservices-using-kubernetes>.
+The example monolith that I have used here is a hypothetical drone delivery application described in one of Microsoft Learn samples <https://docs.microsoft.com/en-us/learn/modules/microservices-architecture/>. I have forked the original monolith source code and modified it at the repository <https://github.com/hitendrajagtap/monolith-to-macroservices-using-kubernetes>.
 
 <p align="center">
   <img src="/assets/img/monolith.jpg" alt="The Monolith" />
 </p>
 
-The monolith is a traditional n-tier architecture application. The monolith source code is in the <i>src/before</i> folder. When a drone delivery is requested, the request processor orchestrates the request. It first packages the delivery in the package-processor service and then schedules the delivery using drone-scheduler service. Both these services are in the services layer of the monolith.
+The monolith is a traditional n-tier architecture application. The monolith source code is in the `src/before` folder. When a drone delivery is requested, the request processor orchestrates the request. It first packages the delivery in the package-processor service and then schedules the delivery using drone-scheduler service. Both these services are in the services layer of the monolith.
 
 ## Breaking into Macroservices
 
-As we have seen above, there are 2 distinct services which can be de-coupled from the monolith - the package-processor service and the drone-scheduler service. In Part 2 of this blog post, I shall demonstrate with code how these 2 services can be containerised and deployed in a Kubernetes cluster. Also, I shall show how our Drone-Delivery will be orchestrated. Until the next part, please feel free to peruse through the source code of the application given above and be ready for the next generation delivery service!
+As we have seen above, there are 2 distinct services which can be de-coupled from the monolith - the package-processor service and the drone-scheduler service. In Part 2 of this blog post, I have demonstrated, with code, how these 2 services can be containerised and deployed in a Kubernetes cluster. Also, I have shown how our Drone-Delivery is orchestrated. So read on the next part, and be ready for the next generation delivery service!
+
+[Monolith to Macroservices using Kubernetes - Part 2]({% post_url 2020-06-13-monolith-to-macroservices-using-kubernetes-part-2 %})
 
 ---
